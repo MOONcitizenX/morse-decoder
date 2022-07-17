@@ -38,13 +38,6 @@ const MORSE_TABLE = {
 	' ': ' '
 };
 
-const morse = {
-	10: '.',
-	11: '-',
-	00: '',
-	'**********': ' '
-};
-
 const decode = (expr) =>
 	expr
 		.match(new RegExp(`.{1,10}`, 'g'))
